@@ -144,7 +144,7 @@
         <div class="d-flex justify-content-center gap-2 mt-3 flex-wrap">
 
             <span class="badge bg-dark px-3 py-2">Read More</span>
-            <span class="badge bg-primary px-3 py-2" id="contactBtn">Contact me</span>
+            <button class="badge bg-primary px-3 py-2" id="contactBtn">Contact me</button>
 
 
         </div>
@@ -447,6 +447,14 @@
         </div>
 
     </section>
+    <script>
+        document.getElementById("contactBtn").addEventListener("click", function () {
+                document.getElementById("contact").scrollIntoView({
+                    behavior: "smooth"
+                });
+            });
+    </script>
+    
 </body>
 
 </html>
